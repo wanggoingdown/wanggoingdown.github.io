@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>一日一更android杂谈（2018-6-15） | 只会刷666的咸鱼君</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="标签： java
+今天讲的是equals哦
+
+ps：本系列如无意外将会一日一小更，五天一大更，如果喜欢本系列记得给小哥点个赞哦（加班除外）
+
+equals今天来讲一讲这两天我看的Java里面比较常用的方法equals，don`t BB ,show the code
+  public boolean equals(Object obj) {
+    return (this == obj);
+}
+这">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="一日一更android杂谈（2018-6-15） | 只会刷666的咸鱼君">
+    <meta name="twitter:description" content="标签： java
+今天讲的是equals哦
+
+ps：本系列如无意外将会一日一小更，五天一大更，如果喜欢本系列记得给小哥点个赞哦（加班除外）
+
+equals今天来讲一讲这两天我看的Java里面比较常用的方法equals，don`t BB ,show the code
+  public boolean equals(Object obj) {
+    return (this == obj);
+}
+这">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="一日一更android杂谈（2018-6-15） | 只会刷666的咸鱼君">
+    <meta property="og:description" content="标签： java
+今天讲的是equals哦
+
+ps：本系列如无意外将会一日一小更，五天一大更，如果喜欢本系列记得给小哥点个赞哦（加班除外）
+
+equals今天来讲一讲这两天我看的Java里面比较常用的方法equals，don`t BB ,show the code
+  public boolean equals(Object obj) {
+    return (this == obj);
+}
+这">
+
+    
+    <meta name="author" content="BigOne">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="只会刷666的咸鱼君" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://yoursite.com/2018/06/15/一日一更android杂谈（2018-6-15）/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 只会刷666的咸鱼君 的主页"><img src="/images/icon.jpg" width="80" alt="只会刷666的咸鱼君 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for 只会刷666的咸鱼君">只会刷666的咸鱼君</a></h1>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description"></p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/wanggoingdown/lovepmy" title="GitHub" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2018-06-15T06:34:45.430Z" class="post-list__meta--date date">2018-06-15</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">一日一更android杂谈（2018-6-15）</h1>
+  </header>
+
+  <section class="post">
+    <p>标签： java</p>
+<p>今天讲的是equals哦</p>
+<hr>
+<p><em>ps：本系列如无意外将会一日一小更，五天一大更，如果喜欢本系列记得给小哥点个赞哦（加班除外）</em></p>
+<hr>
+<p><strong>equals</strong><br>今天来讲一讲这两天我看的Java里面比较常用的方法equals，don`t BB ,show the code</p>
+<pre><code>  public boolean equals(Object obj) {
+    return (this == obj);
+}
+</code></pre><p>这是来自Object类的equals函数，只要对比一下形参与当前对象的地址是否一致就完事儿啦，那让我们再看看注释<br>`*     <li>It is <i>reflexive</i>: for any non-null reference value</li></p>
+<pre><code>*     {@code x}, {@code x.equals(x)} should return
+*     {@code true}.
+* &lt;li&gt;It is &lt;i&gt;symmetric&lt;/i&gt;: for any non-null reference values
+*     {@code x} and {@code y}, {@code x.equals(y)}
+*     should return {@code true} if and only if
+*     {@code y.equals(x)} returns {@code true}.
+* &lt;li&gt;It is &lt;i&gt;transitive&lt;/i&gt;: for any non-null reference values
+*     {@code x}, {@code y}, and {@code z}, if
+*     {@code x.equals(y)} returns {@code true} and
+*     {@code y.equals(z)} returns {@code true}, then
+*     {@code x.equals(z)} should return {@code true}.
+* &lt;li&gt;It is &lt;i&gt;consistent&lt;/i&gt;: for any non-null reference values
+*     {@code x} and {@code y}, multiple invocations of
+*     {@code x.equals(y)} consistently return {@code true}
+*     or consistently return {@code false}, provided no
+*     information used in {@code equals} comparisons on the
+*     objects is modified.
+* &lt;li&gt;For any non-null reference value {@code x},
+*     {@code x.equals(null)} should return {@code false}.`
+？？？什么鬼，手动尼克杨，这可能是假注释，这是生怕我看不懂吗？x和y比较，如果y.equals(x)为true，那么x.equals(y)也为true。好吧说了等于没说~。~
+
+初步总结八个基本数据类型boolean,byte,short,char,int,float,long,double是没有equals函数的，只能用==判断，类对象只要没有重写equals方法，那么默认equals（）跟==是等价的，都是对比内存地址
+</code></pre><hr>
+<p><strong>包装类的equals</strong><br>先看看String.equals()的源码</p>
+<pre><code>public boolean equals(Object anObject) {
+    if (this == anObject) {
+        return true;
+    }
+    if (anObject instanceof String) {
+        String anotherString = (String) anObject;
+        int n = length();
+        if (n == anotherString.length()) {
+            int i = 0;
+            while (n-- != 0) {
+                if (charAt(i) != anotherString.charAt(i))
+                        return false;
+                i++;
+            }
+            return true;
+        }
+    }
+    return false;
+}
+</code></pre><p>根据我多年的看代码经验，这代码没毛病（括弧笑），有人会说这段代码写得过于小心了，直接前三行判断地址就完事儿了，为什么非同一内存地址还要判断每一个字符呢？难道”123”不等于”123”?没错还真不等于，let me show you</p>
+<pre><code> String a=&quot;123&quot;;
+String b=new String(&quot;123&quot;);
+</code></pre><p>虽然a和b都为”123”但是b是new出来的，重新申请了内存地址所以地址就不一样了，所以后面的代码是为了防止这种情况发生，就强行比对了每一个字符。</p>
+<p>Integer的equals</p>
+<pre><code>public boolean equals(Object obj) {
+    if (obj instanceof Integer) {
+        return value == ((Integer)obj).intValue();
+    }
+    return false;
+}
+</code></pre><p>Double的equals</p>
+<pre><code>public boolean equals(Object obj) {
+    return (obj instanceof Double)
+           &amp;&amp; (doubleToLongBits(((Double)obj).value) ==
+                  doubleToLongBits(value));
+}
+</code></pre><p>Float的equals</p>
+<pre><code>public boolean equals(Object obj) {
+    return (obj instanceof Float)
+           &amp;&amp; (floatToIntBits(((Float)obj).value) == floatToIntBits(value));
+}
+</code></pre><p>Boolean的equals</p>
+<pre><code>public boolean equals(Object obj) {
+    if (obj instanceof Boolean) {
+        return value == ((Boolean)obj).booleanValue();
+    }
+    return false;
+}
+</code></pre><p>Character的equals</p>
+<pre><code>public boolean equals(Object obj) {
+    if (obj instanceof Character) {
+        return value == ((Character)obj).charValue();
+    }
+    return false;
+}
+</code></pre><p>Long的equals</p>
+<pre><code> public boolean equals(Object obj) {
+    if (obj instanceof Long) {
+        return value == ((Long)obj).longValue();
+    }
+    return false;
+}
+</code></pre><p>Short的equals</p>
+<pre><code> public boolean equals(Object obj) {
+    if (obj instanceof Short) {
+        return value == ((Short)obj).shortValue();
+    }
+    return false;
+}
+</code></pre><p>大家可以着重看一下String，Double，Float的equals函数，感觉会考<em>划重点</em><br>本次分享到此结束，喜欢的请给star</p>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/06/15/hello-world/" title="Hello World">Hello World</a></h2>
+                <p class="excerpt">
+                
+                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-06-15T06:26:36.075Z" class="post-list__meta--date date">2018-06-15</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2018/06/15/hello-world/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 BigOne - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建，使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题，由<a href="https://monniya.com ">@Monniya</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9cdad07c755fa23f6aced510c6760e87";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
