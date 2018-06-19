@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>一日一更android杂谈（2018-6-18） | 只会刷666的咸鱼君</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="标签： android
+
+上次对Handler进行了一下粗略的讲解，那么接下来要讲解的是Looper、MessageQueue、Message
+
+Looper每一个线程只有一个Looper，每个线程在初始化Looper之后，然后Looper会维护好该线程的消息队列，用来存放Handler发送的Message，并处理消息队列出队的Message。它的特点是它跟它的线程是绑定的，处理消息也是在Loop">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="一日一更android杂谈（2018-6-18） | 只会刷666的咸鱼君">
+    <meta name="twitter:description" content="标签： android
+
+上次对Handler进行了一下粗略的讲解，那么接下来要讲解的是Looper、MessageQueue、Message
+
+Looper每一个线程只有一个Looper，每个线程在初始化Looper之后，然后Looper会维护好该线程的消息队列，用来存放Handler发送的Message，并处理消息队列出队的Message。它的特点是它跟它的线程是绑定的，处理消息也是在Loop">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="一日一更android杂谈（2018-6-18） | 只会刷666的咸鱼君">
+    <meta property="og:description" content="标签： android
+
+上次对Handler进行了一下粗略的讲解，那么接下来要讲解的是Looper、MessageQueue、Message
+
+Looper每一个线程只有一个Looper，每个线程在初始化Looper之后，然后Looper会维护好该线程的消息队列，用来存放Handler发送的Message，并处理消息队列出队的Message。它的特点是它跟它的线程是绑定的，处理消息也是在Loop">
+
+    
+    <meta name="author" content="BigOne">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+
+    <link rel="canonical" href="http://yoursite.com/2018/06/19/一日一更Android杂谈（2018-6-18）/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 只会刷666的咸鱼君 的主页"><img src="/images/icon.jpg" width="80" alt="只会刷666的咸鱼君 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for 只会刷666的咸鱼君">只会刷666的咸鱼君</a></h1>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description"></p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/wanggoingdown" title="GitHub" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2018-06-19T08:10:18.338Z" class="post-list__meta--date date">2018-06-19</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">一日一更android杂谈（2018-6-18）</h1>
+  </header>
+
+  <section class="post">
+    <p>标签： android</p>
+<hr>
+<p>上次对Handler进行了一下粗略的讲解，那么接下来要讲解的是Looper、MessageQueue、Message</p>
+<hr>
+<p><strong>Looper</strong><br>每一个线程只有一个Looper，每个线程在初始化Looper之后，然后Looper会维护好该线程的消息队列，用来存放Handler发送的Message，并处理消息队列出队的Message。它的特点是它跟它的线程是绑定的，处理消息也是在Looper所在的线程去处理，所以当我们在主线程创建Handler时，它就会跟主线程唯一的Looper绑定，从而我们使用Handler在子线程发消息时，最终也是在主线程处理，达到了异步的效果。</p>
+<p>那么就会有人问，为什么我们使用Handler的时候从来都不需要创建Looper呢？这是因为在主线程中，ActivityThread默认会把Looper初始化好，prepare以后，当前线程就会变成一个Looper线程。</p>
+<hr>
+<p><strong>MessageQueue</strong><br>MessageQueue是一个消息队列，用来存放Handler发送的消息。每个线程最多只有一个MessageQueue。MessageQueue通常都是由Looper来管理，而主线程创建时，会创建一个默认的Looper对象，而Looper对象的创建，将自动创建一个MessageQueue。其他非主线程，不会自动创建Looper。</p>
+<hr>
+<p><strong>Message</strong><br>消息对象，就是MessageQueue里面存放的对象，一个MessageQueu可以包括多个Message。当我们需要发送一个Message时，我们一般不建议使用new Message()的形式来创建，更推荐使用Message.obtain()来获取Message实例，因为在Message类里面定义了一个消息池，当消息池里存在未使用的消息时，便返回，如果没有未使用的消息，则通过new的方式创建返回，所以使用Message.obtain()的方式来获取实例可以大大减少当有大量Message对象而产生的垃圾回收问题。</p>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/06/19/一日一更Android杂谈（2018-6-17）/" title="一日一更android杂谈（2018-6-17）">一日一更android杂谈（2018-6-17）</a></h2>
+                <p class="excerpt">
+                
+                标签： java
+
+HashMap与HashTableHashtable是java一开始发布时就提供的键值映射的数据结构，而HashMap产生于JDK1.2。虽然Hashtable比HashMap出现的早一些，但是现在Hashtable基本上已经被弃用了。而HashMap已经成为应用最为广泛的一种数
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-06-19T03:42:26.826Z" class="post-list__meta--date date">2018-06-19</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2018/06/19/一日一更Android杂谈（2018-6-17）/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 BigOne - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建，使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题，由<a href="https://monniya.com ">@Monniya</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9cdad07c755fa23f6aced510c6760e87";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
